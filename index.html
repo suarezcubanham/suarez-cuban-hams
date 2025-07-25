@@ -1,1 +1,96 @@
-<html><body><h1>Suárez Cuban Hams</h1><p>Sabor, Calidad y Precios más Bajos</p></body></html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suárez Cuban Hams</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f8f8; }
+        header { background:#7b1f1f; color:white; text-align:center; padding:50px 20px; }
+        header h1 { margin:0; font-size:48px; }
+        header p { font-size:24px; margin-top:10px; }
+        nav { background:#5a1616; padding:15px; text-align:center; }
+        nav a { color:white; text-decoration:none; margin:0 15px; font-size:18px; }
+        nav a:hover { text-decoration:underline; }
+        section { padding:40px; text-align:center; }
+        footer { background:#7b1f1f; color:white; text-align:center; padding:20px; margin-top:40px; }
+        img { max-width:100%; height:auto; border-radius:8px; }
+    </style>
+
+    <style>
+        @media (max-width: 768px) {
+            header h1 { font-size: 32px !important; }
+            header p { font-size: 18px !important; }
+            nav a { display:block; margin:10px 0; font-size:20px; }
+            section { padding:20px !important; }
+            .grid { grid-template-columns: 1fr !important; }
+            .producto { font-size:16px !important; }
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Suárez Cuban Hams</h1>
+        <p>Sabor, Calidad y Precios más Bajos</p>
+    </header>
+    
+    <style>
+        .menu-toggle { display:none; cursor:pointer; font-size:28px; color:white; }
+        @media (max-width: 768px) {
+            nav { display:none; flex-direction:column; background:#5a1616; }
+            nav a { padding:10px 0; }
+            .menu-toggle { display:block; background:#7b1f1f; padding:15px; text-align:right; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .whatsapp-button {
+            position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 20px;
+            border-radius:50%; text-decoration:none; font-size:24px; box-shadow:0 0 10px rgba(0,0,0,0.3);
+            animation: bounce 2s infinite;
+        }
+    </style>
+    <div class="menu-toggle" onclick="toggleMenu()">☰ Menú</div>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+    </script>
+    
+<nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <section>
+        <h2>Bienvenidos a Suárez Cuban Hams</h2>
+        <p>Especialistas en jamón y carnes ahumadas al estilo cubano.</p>
+        <img src="img/portada.jpg" alt="Portada Suárez Cuban Hams">
+    </section>
+    <footer>
+        <p>© 2025 Suárez Cuban Hams | Louisville, KY</p>
+    </footer>
+
+    <footer style="background:#7b1f1f; color:white; text-align:center; padding:20px; margin-top:40px;">
+        <p>© 2025 Suárez Cuban Hams | Louisville, KY</p>
+        <p>
+            <a href="https://wa.me/15025281243" style="color:white; margin:0 10px;">WhatsApp</a> |
+            <a href="https://www.instagram.com/suarez_cubanham" style="color:white; margin:0 10px;">Instagram</a> |
+            <a href="https://www.tiktok.com/@sergiosr94" style="color:white; margin:0 10px;">TikTok</a>
+        </p>
+    </footer>
+    <a href="https://wa.me/15025281243" style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 20px; border-radius:50%; text-decoration:none; font-size:24px; box-shadow:0 0 10px rgba(0,0,0,0.3);"></a>
+    
+</body>
+</html>
